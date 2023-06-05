@@ -294,12 +294,12 @@ if __name__ == '__main__':
         #print
         print("sigma^2="+str(sigma2) + ":\tnorm_const=" + str(c) + "=sqrt{2*pi}*sigma*" + str(c/math.sqrt(2*math.pi*sigma2)) + "\tvar=" + str(v))
     #print a few samples
-    #for i in range(20): print sample_dgauss(1)
+    for i in range(20): print(sample_dgauss(10**100))
     #plot histogram and statistics
     #includes timing
-    print("Now run the sampler")
-    print("Start with very large sigma^2=10^100 -- for timing purposes only")
-    plot_histogram(10**100,100000,plot=False) #large var, this will just be for timing
-    print("Now sigma^2=10 -- will display a histogram")
-    plot_histogram(10,100000) #small var, this will produce plot
+    # print("Now run the sampler")
+    # print("Start with very large sigma^2=10^100 -- for timing purposes only")
+    # plot_histogram(10**100,100000,plot=False) #large var, this will just be for timing
+    # print("Now sigma^2=10 -- will display a histogram")
+    # plot_histogram(10,100000) #small var, this will produce plot
 
